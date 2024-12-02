@@ -1,8 +1,9 @@
 // Admin Dashboard https://tailwindcomponents.com/component/dashboard-12
 import Image from 'next/image';
 import Link from 'next/link';
-import { CiBookmarkCheck, CiLogout, CiCalendar, CiBoxList, CiViewList} from 'react-icons/ci';
+import {  CiLogout, CiCalendar, CiBoxList, CiViewList} from 'react-icons/ci';
 import { SidebarItem } from './SidebarItem';
+import { LiaCookieSolid } from 'react-icons/lia';
 
 const menus = [
     {
@@ -19,6 +20,16 @@ const menus = [
         link:'/dashboard/server-actions',
         name:'Server actions',
         icon:<CiViewList size={30} />
+    },
+    {
+        link:'/dashboard/cookies',
+        name:'Cookies',
+        icon:<LiaCookieSolid size={30} />
+    },
+    {
+        link:'/dashboard/products',
+        name:'Products',
+        icon:<LiaCookieSolid size={30} />
     },
 ]
 
